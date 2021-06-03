@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+        var first ="coding";
+        alert(first +" hi");
+
+               </script>
+
+    <h1><strong> Live output</strong></h1>
+    <p>0this is my text.</p>
+    <h1><strong>Editable code</strong></h1>
+    <div align="right" style"broder:="" 1px="" solid="" #48bae4;height:100px,"="">
+     코드 영역에서 포커스를 이동하면서 Esc키를누르십시오(Tap키로 문자를 삽입)
+    </div>
+ 
+    <input type="txt" placeholer="입력하세요." style="width: 1000px;px;height:200px;font-size" 30"px; " value="This is my text">
+    <input id="favorite styled" type="button" value="reset">
+    <input id="favorite styled" type="button" value="Hide solution">
+
+    
+</body>
+</html>
