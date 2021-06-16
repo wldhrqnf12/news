@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>  /* css 초기화 */
+    html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+/* 초기화 끝 */
+/* header */
+    #header{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container{
+        clear: both;
+        margin: 0 auto;
+        max-width: 1024px;
+        height: 100%;
+        padding: 0 20px;
+    }
+    
+    .navbar-container{
+        padding: 0 20px;
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-container .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+     /* header end */
+     
+     /*캐시 잔액 */
+     .content.my {
+	background: #f4f4f4;
+	padding: 0;
+}
+    .contentWrapper {
+	max-width: 1024px;
+	margin: 0 auto;
+	overflow: auto;
+    }
+    @media only screen and (min-width: 1024px) {
+            .contentWrapper{
+                padding: 0 20px 80px 20px;
+            }    
+        }
+    .chargeHistory{
+        margin: 0 20px;
+        margin-top: 10px;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+        word-break: break-all;
+    }
+    .chargeHistory .balance{
+        margin: 10px 20px 0px;
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .btn_return {
+        background-color: rgb(221, 221, 221); color: rgb(102, 102, 102); padding: 10px 20px;
+    }
+    .txt2 {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .returnForm {
+         width: 100%;
+         padding-bottom: 10px; 
+    }
+    .returnForm .returnTop { 
+        position: relative; 
+        margin-bottom: 10px; 
+        border-top: 1px solid rgb(221, 221, 221); 
+        padding-top: 20px; }
+    .close{
+        position: absolute;
+        right: 5px;
+        top: 15px;
+        width: 28px;
+        height: 28px;
+        opacity: 0.3;
+    }
+    .returnForm input {
+    width: 100%;
+    margin-top: 5px;
+    }
+    input{
+        padding: 15px 10px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        box-shadow: none;
+        outline: none;
+        background-color: #fafafa;
+        appearance: none;
+        font-size: 16px;
+        color: #333333;
+    }
+    button{
+        margin: 0;
+        font-family: 'Malgun Gothic', dotum, sans-serif;
+
+    }
+    select {
+    padding: 15px 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    outline: none;
+    color: #333333;
+    background-color: #fafafa;   
+    font-size: 16px;
+    appearance: none;
+    box-sizing: border-box;
+}
+    
+</style>
+   
+</head>
+<body>
+    
+<header id="header">
+    <!--header start-->
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-container">
+                 <div class="log">
+     <a href="file:///C:/Users/Admin/Desktop/%EC%83%88%20%ED%8F%B4%EB%8D%94%20(4)/%EC%97%B0%EC%8A%B52.html">log</a>
+                 </div>
+                <div class="menu">
+     <a href="file:///C:/Users/Admin/Desktop/%EC%83%88%20%ED%8F%B4%EB%8D%94%20(4)/%EC%97%B0%EC%8A%B5.html">main</a>
+     <a href="file:///C:/Users/Admin/Documents/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1%20%EB%B0%9B%EC%9D%80%20%ED%8C%8C%EC%9D%BC/%ED%97%A4%EB%8D%94.html">menu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- header end -->
+ </header>
+
+<!-- 개인정보 수정 -->
+<div class="content_my">
+    <div class="contentWrapper">
+        <!--  -->
+        <div class="chargeHistory" style="padding: 30px; border-radius: 30px; background: #EEEEEE;">
+            <div style="margin-bottom: 10px">
+                <p style="font-size: 14px;">캐시 잔액</p>
+            </div>
+                <div style="width: 100%; display: flex; align-self: center; padding: 10px 0px;">
+                    <div style="display: flex; width: 70%; align-self: center;">
+                        <p class="balance">0원</p>
+                    </div>
+                        <div style="width: 30%;">
+                            <div>
+                                <div class="btn_return" onclick="showbalance()" style="cursor: pointer;">
+                                    <p class="txt2">잔액 환불</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                            <div class="returnForm" id="refound_balance" style="cursor: none;">
+                                <div class="returnTop">
+                                    <h3>잔액 환불 요청</h3>
+                                    <p style="color: #ff304b;">* 캐시를 사용하지 않은 경우나 매치가 취소되어 환불을 원하는 경우
+                                     아래 충전 내역에서 취소하기로 환불 요청 해 주세요.</p>
+                                     <p>*캐시 잔액에서 환불 수수료 500원을 뺀 나머지 금액이 입금됩니다.</p>
+                                     <p>*환불을 매주 월, 금 저녁 7시 이후 처리됩니다.</p>
+                                        <span class="close" id="close_balance" style="cursor: pointer;"></span>
+                                </div>
+                                   <form method="post" onsubmit="return pressedBalance();">
+                                        <input type="hidden" name="csrfmiddlewaretoken" value="벨류">
+                                        <input name="refund_type" type="hidden" id="refund_type" value="BALANCE">
+                                        <select name="bank_cd" id="id_bank_cd">
+                                            <option value="벨류값">국민</option>
+                                        </select>
+                                        <input type="text" name="bank_no" id="bank_no" placeholder="환불 받을 계좌번호" required>
+                                        <input type="text" name="bank_owner" id="bank_owner" placeholder="예금주" required>
+                                        <input id="btnBalane" type="submit" value="신청하기">
+                                   </form>
+                            </div>
+            </div>
+                <div class="chargeHistory" style="padding-top: 30px;">
+                    <p style="font-size: 20px;">나의 충전 내역</p>
+                    <div style="padding: 20px 0px;">
+                        <a href="주소" style="display: flex; padding: 14px 0px;">
+                        <p style="color: #90939A; font-size: 14px; align-self: center;">입금했습니데 대기중이예요.</p>
+                        </a>
+                            <a onclick="alert('결제일로부터 2주 이내에 사용하지 않은 캐시만 결제 취소 가능합니다.')" 
+                            style="display: flex; padding: 14px 0px;">
+                            <p style="color: #90939A; font-size: 14px;align-self: center;">결제 취소는 어떻게 하나요?</p>
+                            </a>
+                    </div>
+                </div>
+    </div>
+</div>
+</body>
+</html>

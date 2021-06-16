@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css 초기화 */
+        html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 초기화 끝 */
+/* header */
+        #header{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .container{
+            clear: both;
+            margin: 0 auto;
+            max-width: 1024px;
+            height: 100%;
+            padding: 0 20px;
+        }
+        
+        
+        .navbar-container{
+            padding: 0 20px;
+            height: 56px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-container .menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* header end */
+
+        /* my page start*/
+
+        /* body hero */
+        #myPage{
+            width: 100%;
+            margin: 0 auto;
+            background: wheat;
+        }
+        .my--hero{
+            clear: both;
+            margin: 0 auto;
+            max-width: 1024px;
+            height: 100%;
+            padding: 0 0px;
+            background: white;
+        }
+        .my--hero--hi{
+            display: block;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-start: 0px;
+        }
+       .my--hero--cash{
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            padding
+            align-items: center;
+        }
+        .button{
+            width: 100%;
+            background-color: blue;
+            border-radius: 6px;
+            border: none;
+            box-shadow: none;
+            transition: background-color 0.3 ease-out;
+            display: block;
+            text-align: center;
+            cursor: pointer;
+        }
+        .my--hero--status{
+            
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+       /* my-hero end */
+
+       /* my page */
+    
+       @media (min-width: 1024px) {
+        .wapper{
+               max-width: 1024px;
+               margin: 0 auto;
+           }
+           }
+        .card-container{
+           padding: 50px;
+           background: white;
+           margin-bottom: 20px; 
+           
+        }
+        .header{
+            padding: 30px 20px 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .title{
+            display: flex;
+            align-items: center;
+        }
+        .card-more{
+            font-size: 12px;
+        }
+        .card-body{
+            padding: 20px;
+        }
+        .my-menu-title{
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        /* my page */
+    </style>
+
+</head>
+<body>
+    
+
+ 
+<header id="header">
+    <!--header start-->
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-container">
+                 <div class="log">
+     <a href="file:///C:/Users/Admin/Desktop/%EC%83%88%20%ED%8F%B4%EB%8D%94%20(4)/%EC%97%B0%EC%8A%B52.html"><img src="file:///C:/Users/Admin/Desktop/image/logo%20(1).svg"style="width: 100%; max-width: 760px; vertical-align: middle"></a>
+                 </div>
+                <div class="menu">
+     <a href="file:///C:/Users/Admin/Desktop/%EC%83%88%20%ED%8F%B4%EB%8D%94%20(4)/%EC%97%B0%EC%8A%B5.html">main</a>
+     <a href="file:///C:/Users/Admin/Documents/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1%20%EB%B0%9B%EC%9D%80%20%ED%8C%8C%EC%9D%BC/%ED%97%A4%EB%8D%94.html">menu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- header end -->
+ </header>
+
+
+ <!--body start-->
+
+ <!-- MY hero -->
+    <div id="myPage">
+        <div class="my--hero">
+            <div class="my--hero--hi">
+            <h2>안녕하세요<br><strong>이름</strong></h2>
+            </div>
+                <div class="my--hero--cash">
+                    <div class="my--cash">
+                        <p>나의 캐시 잔액</p><h3>금액</h3>
+                    </div>
+                    <div class="btn-right">
+                        <a href="file:///C:/Users/Admin/Desktop/%EC%83%88%20%ED%8F%B4%EB%8D%94%20(4)/%EC%BA%90%EC%8B%9C%EC%B6%A9%EC%A0%84.html">
+                            <button class="button"> 캐시충전</a>
+                            </button>
+                   </div>
+                </div>
+              <div class="my--hero--status" style="padding-bottom: 20px;" >
+                <div class="my--fair--point">
+                    <p>페어포인트</p>
+                    img<h3>100</h3>
+                </div>
+              </div>    
+        </div>
+        
+    
+<!-- MY hero end-->
+
+   <!-- my page -->
+        <div class="wapper">
+            <div class="card-container">
+                <div class="header">
+                    <div class="title">
+                        <p>나의경기</p>
+                    </div>
+                    <div class="card-more">
+                        <a href="전체보기">전체보기
+                        </a>
+                    </div>
+                </div>
+                    <div class="card-body">
+                        <div class="card-content">
+                            <div class="my-history">
+                                <ul></ul>
+                            </div>
+                        </div>
+                    </div>
+            
+        </div>
+        <div class="card-container">
+            <div class="card-body">
+                <div class="card-menu">
+                    <ul>
+                    <li><a href="캐시충전"><div class="my-menu-title"><p>캐시충전</p>
+                    <div class="my-menu-info"><p>잔액: 0원</p>
+                    </div>
+                    </div></a></li>
+
+                    <li><a href="충전내역"><div class="my-menu-title"><p>충전내역</p></div></a></li>
+                    <li><a href="나의 경기"><div class="my-menu-title"><p>나의경기</p></div></a></li>
+                    <li><a href="설정"><div class="my-menu-title"><p>설정</p></div></a></li>
+                    <li id="logout"><a href="logout"><div class="my-menu-title"><p>로그아웃</p></div></a></li>
+                    </ul>
+                </div>
+            </div>
+        
+    </div>
+    <!-- my page -->
+</body>
+</html>
